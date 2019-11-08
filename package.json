@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-theme-workspace",
+  "name": "gatsby-wedding-theme-workspace",
   "private": true,
   "version": "0.0.1",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "yarn workspace example build"
   },
   "workspaces": [
-    "gatsby-theme-minimal",
+    "gatsby-wedding-theme",
     "example"
   ]
 }
