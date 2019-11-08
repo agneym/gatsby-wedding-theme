@@ -8,7 +8,7 @@
     "build": "yarn workspace example build"
   },
   "workspaces": [
-    "gatsby-wedding-theme",
+    "gatsby-theme-wedding",
     "example"
   ]
 }
