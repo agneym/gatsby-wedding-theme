@@ -4,7 +4,19 @@
   "main": "index.js",
   "author": "Agney Menon <agney@outlook.in> (@agneymenon)",
   "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop"
+  },
   "peerDependencies": {
-    "gatsby": "^2.6.0"
+    "gatsby": "^2.17.10",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "gatsby": "^2.17.10",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   }
 }
