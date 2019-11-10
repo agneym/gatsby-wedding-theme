@@ -18,7 +18,7 @@ module.exports = {
 };
 ```
 
-# Changing the theme
+## Changing the theme
 
 Create a `theme.js` file at `src/@agney/gatsby-theme-wedding/components/theme.js`
 
