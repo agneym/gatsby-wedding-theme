@@ -68,5 +68,6 @@ export default merge({}, theme, {
 This theme makes use of [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/)
 
 ```
-
+yarn
+yarn workspace example develop
 ```
