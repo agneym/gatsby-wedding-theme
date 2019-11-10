@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "gatsby": "^2.17.6",
-    "@agney/gatsby-theme-wedding": "^1.0.0",
+    "gatsby-theme-wedding": "^1.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   }

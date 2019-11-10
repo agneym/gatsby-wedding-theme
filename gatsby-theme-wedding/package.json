@@ -1,5 +1,5 @@
 {
-  "name": "@agney/gatsby-theme-wedding",
+  "name": "gatsby-theme-wedding",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Agney Menon <agney@outlook.in> (@agneymenon)",
@@ -24,7 +24,10 @@
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
+    "gatsby-plugin-tinacms": "^0.1.9",
     "gatsby-source-filesystem": "^2.1.35",
+    "gatsby-tinacms-git": "^0.2.7",
+    "gatsby-tinacms-json": "^0.6.0",
     "gatsby-transformer-json": "^2.2.16",
     "react-countdown-now": "^2.1.2",
     "react-helmet": "^5.2.1",
