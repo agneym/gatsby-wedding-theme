@@ -10,6 +10,7 @@ import media from "./media";
 const Container = styled.article`
   margin: 2rem;
   width: 30%;
+  text-align: center;
 
   ${media.phone`
     width: 90%;
