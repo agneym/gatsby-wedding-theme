@@ -13,7 +13,7 @@
     }
   },
   "workspaces": [
-    "gatsby-theme-wedding",
+    "@agney/gatsby-theme-wedding",
     "example"
   ],
   "devDependencies": {
