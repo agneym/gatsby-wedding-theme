@@ -5,6 +5,8 @@
 <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
 </a>
 
+[Demo](https://vigorous-ptolemy-fe8a70.netlify.com/event)
+
 ## Manual Setup
 
 In your `gatsby-config.js`:
