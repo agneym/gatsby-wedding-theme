@@ -2,22 +2,6 @@
 # yarn lockfile v1
 
 
-"@agney/gatsby-theme-wedding@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@agney/gatsby-theme-wedding/-/gatsby-theme-wedding-1.0.0.tgz#2e171b05198e132fed90c5db6989e3ddcb0f5698"
-  integrity sha512-0LesSJnjd/KEFkJq6j0qbxvElJwGDmW96vHPzwBdSeHcplcxBDr6Irq2cfetJ+JktqUYbLY8xTNg54lfEwYaKQ==
-  dependencies:
-    "@fortawesome/fontawesome-svg-core" "^1.2.25"
-    "@fortawesome/free-brands-svg-icons" "^5.11.2"
-    "@fortawesome/free-solid-svg-icons" "^5.11.2"
-    "@fortawesome/react-fontawesome" "^0.1.7"
-    gatsby-source-filesystem "^2.1.35"
-    gatsby-transformer-json "^2.2.16"
-    react-countdown-now "^2.1.2"
-    react-helmet "^5.2.1"
-    sal.js "^0.6.3"
-    styled-components "^4.4.1"
-
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
@@ -4593,7 +4577,7 @@ gatsby-transformer-json@^2.2.16:
     "@babel/runtime" "^7.6.3"
     bluebird "^3.7.1"
 
-gatsby@^2.17.6:
+gatsby@^2.17.10, gatsby@^2.17.6:
   version "2.17.10"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.17.10.tgz#ad2a946d08c61b2bb99636e36c85ffc27c639f4e"
   integrity sha512-xrKfc67UIMAkVtJj4fS3MK0KUiLvkOfuTZBp6GRXVxMZXuREem3uFnnYD//n+vGHSlYk6c0R1NJ9+2lJClTG2Q==
