@@ -43,6 +43,6 @@ export default merge({}, theme, {
 });
 ```
 
-## Replacing Components
+## Replacing Components (Shadowing)
 
 [Docs](https://www.gatsbyjs.org/docs/themes/shadowing/)
