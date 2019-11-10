@@ -6,12 +6,12 @@ exports.onPreBootstrap = ({ reporter }) => {
     reporter.info(`Creating the ${contentPath} directory`);
     fs.mkdirSync(contentPath);
   }
-}
+};
 
 exports.createPages = async ({ actions }) => {
   const basePath = "/";
   actions.createPage({
     path: basePath,
-    component: require.resolve("./src/templates/Landing.js"),
+    component: require.resolve("./src/templates/Landing.js")
   });
-}
+};

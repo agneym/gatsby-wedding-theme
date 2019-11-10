@@ -7,8 +7,18 @@
   "scripts": {
     "build": "yarn workspace example build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "workspaces": [
     "gatsby-theme-wedding",
     "example"
-  ]
+  ],
+  "devDependencies": {
+    "husky": "^3.0.9",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  }
 }
