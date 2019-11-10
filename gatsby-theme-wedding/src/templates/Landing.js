@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
+import sal from "sal.js";
 
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
@@ -8,6 +9,9 @@ import CountdownSection from "../components/CountdownSection";
 import Profile from "../components/Profile";
 
 const Landing = () => {
+  useEffect(() => {
+    sal();
+  });
   return (
     <Fragment>
       <SEO />

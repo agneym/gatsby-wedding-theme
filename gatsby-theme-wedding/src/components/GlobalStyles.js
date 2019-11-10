@@ -3,6 +3,7 @@ import media from "./media";
 import "sal.js/dist/sal.css";
 
 const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat&display=swap');
   html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
