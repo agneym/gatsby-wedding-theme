@@ -21,10 +21,13 @@
   ],
   "events": [
     {
-      "title": "03-November-2019",
+      "title": "26-December-2020",
       "occasion": {
         "name": "Lunch & Celebrations",
-        "place": "MCP International Auditorium, Irinjalakuda",
+        "place": {
+          "name": "Casa Garden, Sacremento",
+          "map": "https://maps.google.com/maps?q=Casa%20Garden%20%7C%20Restaurant%20%26%20Event%20Venue&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        },
         "time": "12:30PM"
       },
       "calendar": {
@@ -33,10 +36,13 @@
       }
     },
     {
-      "title": "04-November-2019",
+      "title": "31-December-2019",
       "occasion": {
         "name": "Reception",
-        "place": "Renai Cochin",
+        "place": {
+          "name": "Padua Hills Theatre",
+          "map": "https://maps.google.com/maps?q=Padua%20Hills%20Theatre&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        },
         "time": "06:30PM - 09:30PM"
       },
       "calendar": {

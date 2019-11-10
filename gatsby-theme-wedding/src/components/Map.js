@@ -4,6 +4,7 @@ import styled from "styled-components";
 import DateList from "./DateList";
 import media from "./media";
 import animationParams from "./animation-params";
+import { graphql, useStaticQuery } from "gatsby";
 
 const Container = styled.section`
   height: 100vh;
@@ -38,17 +39,34 @@ const GoogleMap = styled.iframe`
   height: 50%;
 `;
 
+const QUERY = graphql`
+  query {
+    event {
+      events {
+        occasion {
+          place {
+            map
+          }
+        }
+      }
+    }
+  }
+`;
+
 function Map() {
+  const {
+    event: { events }
+  } = useStaticQuery(QUERY);
   return (
     <Container>
       <MapContainer>
         <GoogleMap
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15699.277005641103!2d76.217312!3d10.356333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c755f1e72437318!2sMCP%20International%20Convention%20Centre!5e0!3m2!1sen!2sin!4v1570207817269!5m2!1sen!2sin"
+          src={events[0].occasion.place.map}
           frameBorder="0"
           allowfullscreen=""
         ></GoogleMap>
         <GoogleMap
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15716.567645018256!2d76.3053825!3d10.0051346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd13d905253660fdd!2sThe%20Renai%20cochin!5e0!3m2!1sen!2sin!4v1570208516340!5m2!1sen!2sin"
+          src={events[1].occasion.place.map}
           frameBorder="0"
           allowfullscreen=""
         ></GoogleMap>
