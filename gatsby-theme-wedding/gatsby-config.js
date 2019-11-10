@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = ({ contentPath = "data" }) => ({
   siteMetadata: {
     title: "Samantha & Nathaniel",
     description: "Something",
@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "data"
+        path: contentPath
       }
     },
     {
@@ -18,4 +18,4 @@ module.exports = {
       }
     }
   ]
-};
+});
