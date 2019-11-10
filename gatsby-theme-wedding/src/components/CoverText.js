@@ -25,7 +25,9 @@ const Heading = styled.h1`
   }
 
   ${media.phone`
-    margin: 4rem 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
   `}
 `;
 

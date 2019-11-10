@@ -13,17 +13,21 @@ const Container = styled.section`
 
   ${media.phone`
     grid-template-columns: 1fr;
+    min-height: 100vh;
+    height: auto;
   `}
 `;
 
 const TextContainer = styled.div`
   align-self: center;
   text-align: center;
+
   ${media.phone`
     grid-row: 1 / 1;
     grid-column: 1 / 1;
     z-index: 5;
     color: #ffffff;
+    padding-bottom: 2rem;
   `}
 `;
 
@@ -34,6 +38,7 @@ const ImageContainer = styled.div`
   ${media.phone`
     grid-row: 1 / 1;
     grid-column: 1 / 1;
+    height: 100%;
 
     &::before {
       position: absolute;

@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import media from "./media";
 import "sal.js/dist/sal.css";
 
 const GlobalStyles = createGlobalStyle`
@@ -7,10 +6,6 @@ const GlobalStyles = createGlobalStyle`
   html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
-    ${media.phone`
-      font-size: 10px;
-    `}
   }
   body {
     margin: 0;
@@ -31,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-image: ${props => props.theme.colors.gradient};
+    background-color: ${props => props.theme.colors.gradient};
   }
 `;
 
