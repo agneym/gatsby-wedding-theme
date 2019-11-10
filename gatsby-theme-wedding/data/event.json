@@ -29,8 +29,8 @@
         "time": "12:30PM"
       },
       "calendar": {
-        "google": "http://www.google.com/calendar/event?action=TEMPLATE&dates=20191103T070000Z%2F20191103T100000Z&text=Sruthi%20Naveen%20Wedding&location=MCP%20International%20Auditorium%2C%20Irinjalakuda&details=",
-        "outlook": "https://outlook.live.com/owa/?body=&enddt=20191009T185749&location=MCP%20International%20Auditorium%2C%20Irinjalakuda&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191009T185749&subject=Sruthi%20Naveen%20Wedding"
+        "google": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20191110T133519Z%2F20191110T133519Z&details=&location=Casa%20Garden%2C%20Sacremento&text=Nathaniel%20%26%20Samantha%20Wedding&trp=false",
+        "outlook": "https://outlook.live.com/owa/?body=&enddt=20191110T133519&location=Casa%20Garden%2C%20Sacremento&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191110T133519&subject=Nathaniel%20%26%20Samantha%20Wedding"
       }
     },
     {
@@ -44,8 +44,8 @@
         "time": "06:30PM - 09:30PM"
       },
       "calendar": {
-        "google": "http://www.google.com/calendar/event?action=TEMPLATE&dates=20191104T010000Z%2F20191104T040000Z&text=Sruthi%20Naveen%20Reception&location=Renai%20Palarivattom&details=",
-        "outlook": "https://outlook.live.com/owa/?body=&enddt=20191009T185909&location=Renai%20Cochin&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191009T185749&subject=Sruthi%20Naveen%20Reception"
+        "google": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20191110T133519Z%2F20191110T133519Z&details=&location=Casa%20Garden%2C%20Sacremento&text=Nathaniel%20%26%20Samantha%20Wedding&trp=false",
+        "outlook": "https://outlook.live.com/owa/?body=&enddt=20191110T133519&location=Casa%20Garden%2C%20Sacremento&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191110T133519&subject=Nathaniel%20%26%20Samantha%20Wedding"
       }
     }
   ]
