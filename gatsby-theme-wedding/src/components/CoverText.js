@@ -32,8 +32,12 @@ const Heading = styled.h1`
 `;
 
 const ImpText = styled(Text)`
-  color: ${props => props.theme.colors.light};
-  font-weight: 600;
+  color: ${props => props.theme.colors.secondary};
+
+  ${media.phone`
+    color: ${props => props.theme.colors.light};
+    font-weight: 600;
+  `}
 `;
 
 const QUERY = graphql`
