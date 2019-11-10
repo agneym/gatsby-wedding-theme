@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Countdown from "react-countdown-now";
+import { graphql, useStaticQuery } from "gatsby";
 
 import backgroundImg from "../images/background.jpg";
 import CountItem from "./CountItem";
 import animationParams from "./animation-params";
-import { graphql, useStaticQuery } from "gatsby";
+import media from "./media";
 
 const Container = styled.section`
   display: flex;
@@ -22,6 +23,10 @@ const Container = styled.section`
 
 const CountContainer = styled.div`
   display: flex;
+
+  ${media.phone`
+    flex-direction: column;
+  `}
 `;
 
 const TitleContainer = styled.div`
