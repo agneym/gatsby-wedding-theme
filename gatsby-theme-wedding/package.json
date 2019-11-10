@@ -30,5 +30,9 @@
     "react-helmet": "^5.2.1",
     "sal.js": "^0.6.3",
     "styled-components": "^4.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BoyWithSilverWings/gatsby-wedding-theme"
   }
 }
