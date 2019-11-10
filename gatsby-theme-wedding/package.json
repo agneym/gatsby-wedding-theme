@@ -20,9 +20,14 @@
     "react-dom": "^16.11.0"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
     "gatsby-source-filesystem": "^2.1.35",
     "gatsby-transformer-json": "^2.2.16",
+    "react-countdown-now": "^2.1.2",
     "react-helmet": "^5.2.1",
+    "sal.js": "^0.6.3",
     "styled-components": "^4.4.1"
   }
 }
