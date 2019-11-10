@@ -1,48 +1,48 @@
 {
-    "profiles": [
-        {
-            "image": "",
-            "name": "Sruthy Menon",
-            "description": "People who know sruthi would aptly describe her as a cheery, enthusiastic and loving person, always looking for an opportunity to socialize. Amongst her many passions, she is a trained carnatic singer, dancer and is also an animal lover. On the most important day of her life, she hopes to see you all there to celebrate and create memories with her to cherish forever.",
-            "links": {
-                "instagram": "https://instagram.com/sruthimenon94/",
-                "facebook": "https://www.facebook.com/sruthimenon1994"
-            }
-        },
-        {
-            "image": "",
-            "name": "Naveen",
-            "description": "Speaking about Naveen, he could be best described as gentle, light-hearted, out-going and loving person. His passions include cricket, travelling. He wants all to be a part of the celebration on this auspicious day and create memories which he would hold on to forever.",
-            "links": {
-                "instagram": "https://instagram.com/naveen_suresh91/",
-                "facebook": "https://www.facebook.com/naveen.suresh.9"
-            }
-        }
-    ],
-    "events": [
-        {
-            "title": "03-November-2019",
-            "occasion": {
-                "name": "Lunch & Celebrations",
-                "place": "MCP International Auditorium, Irinjalakuda",
-                "time": "12:30PM"
-            },
-            "calendar": {
-                "google": "http://www.google.com/calendar/event?action=TEMPLATE&dates=20191103T070000Z%2F20191103T100000Z&text=Sruthi%20Naveen%20Wedding&location=MCP%20International%20Auditorium%2C%20Irinjalakuda&details=",
-                "outlook": "https://outlook.live.com/owa/?body=&enddt=20191009T185749&location=MCP%20International%20Auditorium%2C%20Irinjalakuda&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191009T185749&subject=Sruthi%20Naveen%20Wedding"
-            }
-        },
-        {
-            "title": "04-November-2019",
-            "occasion": {
-                    "name": "Reception",
-                    "place": "Renai Cochin",
-                    "time": "06:30PM - 09:30PM"
-            },
-            "calendar": {
-                "google": "http://www.google.com/calendar/event?action=TEMPLATE&dates=20191104T010000Z%2F20191104T040000Z&text=Sruthi%20Naveen%20Reception&location=Renai%20Palarivattom&details=",
-                "outlook": "https://outlook.live.com/owa/?body=&enddt=20191009T185909&location=Renai%20Cochin&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191009T185749&subject=Sruthi%20Naveen%20Reception"
-            }
-        }
-    ]
+  "profiles": [
+    {
+      "image": "",
+      "name": "Samantha",
+      "description": "People who know sruthi would aptly describe her as a cheery, enthusiastic and loving person, always looking for an opportunity to socialize. Amongst her many passions, she is a trained carnatic singer, dancer and is also an animal lover. On the most important day of her life, she hopes to see you all there to celebrate and create memories with her to cherish forever.",
+      "links": {
+        "instagram": "https://instagram.com/samantha/",
+        "facebook": "https://www.facebook.com/samantha"
+      }
+    },
+    {
+      "image": "",
+      "name": "Nathaniel",
+      "description": "Speaking about Naveen, he could be best described as gentle, light-hearted, out-going and loving person. His passions include cricket, travelling. He wants all to be a part of the celebration on this auspicious day and create memories which he would hold on to forever.",
+      "links": {
+        "instagram": "https://instagram.com/nathaniel",
+        "facebook": "https://www.facebook.com/nathaniel"
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "03-November-2019",
+      "occasion": {
+        "name": "Lunch & Celebrations",
+        "place": "MCP International Auditorium, Irinjalakuda",
+        "time": "12:30PM"
+      },
+      "calendar": {
+        "google": "http://www.google.com/calendar/event?action=TEMPLATE&dates=20191103T070000Z%2F20191103T100000Z&text=Sruthi%20Naveen%20Wedding&location=MCP%20International%20Auditorium%2C%20Irinjalakuda&details=",
+        "outlook": "https://outlook.live.com/owa/?body=&enddt=20191009T185749&location=MCP%20International%20Auditorium%2C%20Irinjalakuda&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191009T185749&subject=Sruthi%20Naveen%20Wedding"
+      }
+    },
+    {
+      "title": "04-November-2019",
+      "occasion": {
+        "name": "Reception",
+        "place": "Renai Cochin",
+        "time": "06:30PM - 09:30PM"
+      },
+      "calendar": {
+        "google": "http://www.google.com/calendar/event?action=TEMPLATE&dates=20191104T010000Z%2F20191104T040000Z&text=Sruthi%20Naveen%20Reception&location=Renai%20Palarivattom&details=",
+        "outlook": "https://outlook.live.com/owa/?body=&enddt=20191009T185909&location=Renai%20Cochin&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191009T185749&subject=Sruthi%20Naveen%20Reception"
+      }
+    }
+  ]
 }

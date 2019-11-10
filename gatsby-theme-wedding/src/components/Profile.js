@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
 
 import ProfileCard from "./ProfileCard";
 import media from "./media";
@@ -37,28 +38,25 @@ const CardContainer = styled.div`
   `}
 `;
 
-const profiles = {
-  sruthi: {
-    image: brideImg,
-    name: "Sruthy Menon",
-    description: `People who know sruthi would aptly describe her as a cheery, enthusiastic and loving person, always looking for an opportunity to socialize. Amongst her many passions, she is a trained carnatic singer, dancer and is also an animal lover. On the most important day of her life, she hopes to see you all there to celebrate and create memories with her to cherish forever.`,
-    links: {
-      instagram: "https://instagram.com/sruthimenon94/",
-      facebook: "https://www.facebook.com/sruthimenon1994"
-    }
-  },
-  naveen: {
-    image: groomImg,
-    name: "Naveen",
-    description: `Speaking about Naveen, he could be best described as gentle, light-hearted, out-going and loving person. His passions include cricket, travelling. He wants all to be a part of the celebration on this auspicious day and create memories which he would hold on to forever.`,
-    links: {
-      instagram: "https://instagram.com/naveen_suresh91/",
-      facebook: "https://www.facebook.com/naveen.suresh.9"
+const QUERY = graphql`
+  query fetchProfiles {
+    event {
+      profiles {
+        description
+        name
+        links {
+          facebook
+          instagram
+        }
+      }
     }
   }
-};
+`;
 
 function Profile() {
+  const {
+    event: { profiles }
+  } = useStaticQuery(QUERY);
   return (
     <Container>
       <TitleContainer>
@@ -68,8 +66,8 @@ function Profile() {
         </Title>
       </TitleContainer>
       <CardContainer>
-        <ProfileCard {...profiles.sruthi} />
-        <ProfileCard {...profiles.naveen} />
+        <ProfileCard image={brideImg} {...profiles[0]} />
+        <ProfileCard image={groomImg} {...profiles[1]} />
       </CardContainer>
     </Container>
   );
