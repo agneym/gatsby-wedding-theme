@@ -4,11 +4,18 @@
 
 In your `gatsby-config.js`:
 
+```bash
+npm i --save-dev @agney/gatsby-theme-wedding
+
+# OR #
+yarn add --dev @agney/gatsby-theme-wedding
+```
+
 ```js
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-theme-wedding`,
+      resolve: `@agney/gatsby-theme-wedding`,
       options: {
         contentPath: "occasion", // Tell the theme where your data is.
         basePath: "/event" // Tell the theme which URL to render the theme at.
@@ -17,6 +24,10 @@ module.exports = {
   ]
 };
 ```
+
+## Adding the Data
+
+[Data Format](https://github.com/BoyWithSilverWings/gatsby-wedding-theme/blob/master/gatsby-theme-wedding/data/event.json) - You can provide data in JSON format.
 
 ## Changing the theme
 
@@ -46,3 +57,11 @@ export default merge({}, theme, {
 ## Replacing Components (Shadowing)
 
 [Docs](https://www.gatsbyjs.org/docs/themes/shadowing/)
+
+## Contributing
+
+This theme makes use of [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/)
+
+```
+
+```
