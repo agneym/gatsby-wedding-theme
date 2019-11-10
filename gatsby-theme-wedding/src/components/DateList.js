@@ -7,46 +7,7 @@ import {
   faClock
 } from "@fortawesome/free-solid-svg-icons";
 import AddToCalendar from "./AddToCalendar";
-
-const config = [
-  {
-    title: "03-November-2019",
-    occasion: [
-      {
-        name: "Thaliketu",
-        place: "Vengattumpilly Shiva Temple",
-        time: "11:40AM - 12:15PM"
-      },
-      {
-        name: "Lunch & Celebrations",
-        place: "MCP International Auditorium, Irinjalakuda",
-        time: "12:30PM"
-      }
-    ],
-    calendar: {
-      google:
-        "http://www.google.com/calendar/event?action=TEMPLATE&dates=20191103T070000Z%2F20191103T100000Z&text=Sruthi%20Naveen%20Wedding&location=MCP%20International%20Auditorium%2C%20Irinjalakuda&details=",
-      outlook:
-        "https://outlook.live.com/owa/?body=&enddt=20191009T185749&location=MCP%20International%20Auditorium%2C%20Irinjalakuda&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191009T185749&subject=Sruthi%20Naveen%20Wedding"
-    }
-  },
-  {
-    title: "04-November-2019",
-    occasion: [
-      {
-        name: "Reception",
-        place: "Renai Cochin",
-        time: "06:30PM - 09:30PM"
-      }
-    ],
-    calendar: {
-      google:
-        "http://www.google.com/calendar/event?action=TEMPLATE&dates=20191104T010000Z%2F20191104T040000Z&text=Sruthi%20Naveen%20Reception&location=Renai%20Palarivattom&details=",
-      outlook:
-        "https://outlook.live.com/owa/?body=&enddt=20191009T185909&location=Renai%20Cochin&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=20191009T185749&subject=Sruthi%20Naveen%20Reception"
-    }
-  }
-];
+import { graphql, useStaticQuery } from "gatsby";
 
 const Container = styled.div`
   margin-bottom: 5rem;
@@ -79,33 +40,55 @@ const ListItem = styled.li`
   }
 `;
 
+const QUERY = graphql`
+  query {
+    event {
+      events {
+        title
+        occasion {
+          name
+          place {
+            name
+          }
+          time
+        }
+        calendar {
+          google
+          outlook
+        }
+      }
+    }
+  }
+`;
+
 function DateList() {
+  const {
+    event: { events }
+  } = useStaticQuery(QUERY);
   return (
     <Fragment>
-      {config.map(item => (
-        <Container key={item.title}>
+      {events.map(event => (
+        <Container key={event.title}>
           <SectionTitle>
             <StyledIcon icon={faCalendar} color="red" />
-            <span> {item.title}</span>
+            <span> {event.title}</span>
           </SectionTitle>
           <List>
-            {item.occasion.map(occasion => (
-              <ListItem key={occasion.name}>
-                <span>{occasion.name} </span>
-                <p>
-                  <StyledIcon icon={faMapMarkerAlt} />
-                  <strong> {occasion.place}</strong>
-                </p>
-                <p>
-                  <StyledIcon icon={faClock} />
-                  <strong> {occasion.time}</strong>
-                </p>
-              </ListItem>
-            ))}
+            <ListItem key={event.occasion.name}>
+              <span>{event.occasion.name} </span>
+              <p>
+                <StyledIcon icon={faMapMarkerAlt} />
+                <strong> {event.occasion.place.name}</strong>
+              </p>
+              <p>
+                <StyledIcon icon={faClock} />
+                <strong> {event.occasion.time}</strong>
+              </p>
+            </ListItem>
           </List>
           <AddToCalendar
-            google={item.calendar.google}
-            outlook={item.calendar.outlook}
+            google={event.calendar.google}
+            outlook={event.calendar.outlook}
           />
         </Container>
       ))}
