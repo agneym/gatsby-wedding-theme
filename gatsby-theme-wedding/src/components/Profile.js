@@ -4,8 +4,8 @@ import styled from "styled-components";
 import ProfileCard from "./ProfileCard";
 import media from "./media";
 import flowersImg from "../images/flowers.gif";
-import sruthiImg from "../images/sruthi.jpg";
-import naveenImg from "../images/naveen.jpg";
+import brideImg from "../images/bride.jpg";
+import groomImg from "../images/groom.jpg";
 
 const Container = styled.section`
   padding: 6rem 2rem;
@@ -39,7 +39,7 @@ const CardContainer = styled.div`
 
 const profiles = {
   sruthi: {
-    image: sruthiImg,
+    image: brideImg,
     name: "Sruthy Menon",
     description: `People who know sruthi would aptly describe her as a cheery, enthusiastic and loving person, always looking for an opportunity to socialize. Amongst her many passions, she is a trained carnatic singer, dancer and is also an animal lover. On the most important day of her life, she hopes to see you all there to celebrate and create memories with her to cherish forever.`,
     links: {
@@ -48,7 +48,7 @@ const profiles = {
     }
   },
   naveen: {
-    image: naveenImg,
+    image: groomImg,
     name: "Naveen",
     description: `Speaking about Naveen, he could be best described as gentle, light-hearted, out-going and loving person. His passions include cricket, travelling. He wants all to be a part of the celebration on this auspicious day and create memories which he would hold on to forever.`,
     links: {
