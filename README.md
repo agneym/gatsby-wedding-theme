@@ -1,64 +1,75 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Starter for creating a Gatsby Theme workspace
-</h1>
+# Gatsby Wedding Theme Workspace
 
-```shell
-gatsby new my-theme https://github.com/gatsbyjs/gatsby-starter-theme-workspace
-cd my-theme
-yarn workspace example develop
+<a href="https://badge.fury.io/js/%40agney%2Fgatsby-theme-wedding"><img src="https://badge.fury.io/js/%40agney%2Fgatsby-theme-wedding.svg" alt="npm version" height="18"></a>
+<a href="#badge">
+<img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
+</a>
+
+[Demo](https://vigorous-ptolemy-fe8a70.netlify.com/event)
+
+## Manual Setup
+
+In your `gatsby-config.js`:
+
+```bash
+npm i --save-dev @agney/gatsby-theme-wedding
+
+# OR #
+yarn add --dev @agney/gatsby-theme-wedding
 ```
 
-## Layout
-
-```shell
-.
-├── README.md
-├── gatsby-theme-minimal
-│   ├── README.md
-│   ├── gatsby-config.js
-│   ├── index.js
-│   └── package.json
-├── example
-│   ├── README.md
-│   ├── gatsby-config.js
-│   ├── package.json
-│   └── src
-├── package.json
-└── yarn.lock
-
-3 directories, 10 files
+```js
+module.exports = {
+  plugins: [
+    {
+      resolve: `@agney/gatsby-theme-wedding`,
+      options: {
+        contentPath: "occasion", // Tell the theme where your data is.
+        basePath: "/event" // Tell the theme which URL to render the theme at.
+      }
+    }
+  ]
+};
 ```
 
-### `gatsby-theme-minimal`
+## Adding the Data
 
-This directory is the theme package itself. You should rename this at
-some point to be `gatsby-theme-{my-theme-name}`. Also change the
-`package.json` name field and the corresponding dependency in the
-example directory's `package.json`/`gatsby-config.js` to match the chosen name.
+[Data Format](https://github.com/BoyWithSilverWings/gatsby-wedding-theme/blob/master/gatsby-theme-wedding/data/event.json) - You can provide data in JSON format.
 
-- `gatsby-theme-minimal/`
-  - `gatsby-config.js`: An empty gatsby-config that you can use as a starting point for building functionality into your theme.
-  - `index.js`: Since themes also function as plugins, this is an empty file that
-    gatsby needs to use this theme as a plugin.
-  - `package.json`: The dependencies that your theme will pull in when people install it. `gatsby` should be a `peerDependency`.
+## Changing the theme
 
-### `example`
+Create a `theme.js` file at `src/@agney/gatsby-theme-wedding/components/theme.js`
 
-This is an example usage of your theme. It should look the same as the
-site of someone who installed and used your theme from npm.
+```js
+const theme = {};
 
-- `example/`
-  - `gatsby-config.js`: Specifies which theme to use and any other one-off config a site might need.
-  - `src/`: Source code such as one-off pages or components that might live in
-    a user's site.
+export default theme;
+```
 
-You can run the example with:
+[See full properties here](https://github.com/BoyWithSilverWings/gatsby-wedding-theme/blob/master/gatsby-theme-wedding/src/components/theme.js)
 
-```shell
+If you need to keep existing theme and edit some of the values:
+
+```js
+import merge from "lodash.merge";
+import theme from "@agney/gatsby-theme-wedding";
+
+export default merge({}, theme, {
+  colors: {
+    primary: "blue"
+  }
+});
+```
+
+## Replacing Components (Shadowing)
+
+[Docs](https://www.gatsbyjs.org/docs/themes/shadowing/)
+
+## Contributing
+
+This theme makes use of [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/)
+
+```
+yarn
 yarn workspace example develop
 ```

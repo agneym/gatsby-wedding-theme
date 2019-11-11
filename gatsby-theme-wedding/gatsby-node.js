@@ -15,3 +15,19 @@ exports.createPages = async ({ actions }, options) => {
     component: require.resolve("./src/templates/Landing.js")
   });
 };
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  console.log("on create webpack config gets called!!!!!!!!!!!!!!!!!");
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /sal.js/,
+            use: loaders.null()
+          }
+        ]
+      }
+    });
+  }
+};
