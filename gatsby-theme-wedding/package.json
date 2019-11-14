@@ -1,6 +1,6 @@
 {
   "name": "@agney/gatsby-theme-wedding",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "main": "index.js",
   "author": "Agney Menon <agney@outlook.in> (@agneymenon)",
   "license": "MIT",
@@ -37,5 +37,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/BoyWithSilverWings/gatsby-wedding-theme"
-  }
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin"
+  ]
 }
