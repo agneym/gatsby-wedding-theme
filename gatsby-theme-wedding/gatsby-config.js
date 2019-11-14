@@ -6,12 +6,6 @@ module.exports = ({ contentPath = "data" }) => ({
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-tinacms",
-      options: {
-        plugins: ["gatsby-tinacms-git", "gatsby-tinacms-json"]
-      }
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: contentPath
@@ -20,7 +14,13 @@ module.exports = ({ contentPath = "data" }) => ({
     {
       resolve: "gatsby-transformer-json",
       options: {
-        typeName: "Event"
+        typeName: "EventJson"
+      }
+    },
+    {
+      resolve: "gatsby-plugin-tinacms",
+      options: {
+        plugins: ["gatsby-tinacms-git", "gatsby-tinacms-json"]
       }
     }
   ]
