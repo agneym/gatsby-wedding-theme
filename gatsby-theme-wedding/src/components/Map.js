@@ -41,7 +41,7 @@ const GoogleMap = styled.iframe`
 
 const QUERY = graphql`
   query {
-    event {
+    eventJson {
       events {
         occasion {
           place {
@@ -49,13 +49,15 @@ const QUERY = graphql`
           }
         }
       }
+      rawJson
+      fileRelativePath
     }
   }
 `;
 
 function Map() {
   const {
-    event: { events }
+    eventJson: { events }
   } = useStaticQuery(QUERY);
   return (
     <Container>

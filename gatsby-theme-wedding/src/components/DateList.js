@@ -42,7 +42,7 @@ const ListItem = styled.li`
 
 const QUERY = graphql`
   query {
-    event {
+    eventJson {
       events {
         title
         occasion {
@@ -57,13 +57,15 @@ const QUERY = graphql`
           outlook
         }
       }
+      rawJson
+      fileRelativePath
     }
   }
 `;
 
 function DateList() {
   const {
-    event: { events }
+    eventJson: { events }
   } = useStaticQuery(QUERY);
   return (
     <Fragment>

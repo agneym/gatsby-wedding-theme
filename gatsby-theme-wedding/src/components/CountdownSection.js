@@ -46,17 +46,19 @@ const Subtitle = styled.sub`
 
 const QUERY = graphql`
   query {
-    event {
+    eventJson {
       events {
         title
       }
+      rawJson
+      fileRelativePath
     }
   }
 `;
 
 function CountdownSection() {
   const {
-    event: { events }
+    eventJson: { events }
   } = useStaticQuery(QUERY);
   return (
     <Container>

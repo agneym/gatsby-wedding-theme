@@ -40,7 +40,7 @@ const CardContainer = styled.div`
 
 const QUERY = graphql`
   query fetchProfiles {
-    event {
+    eventJson {
       profiles {
         description
         name
@@ -49,13 +49,15 @@ const QUERY = graphql`
           instagram
         }
       }
+      rawJson
+      fileRelativePath
     }
   }
 `;
 
 function Profile() {
   const {
-    event: { profiles }
+    eventJson: { profiles }
   } = useStaticQuery(QUERY);
   return (
     <Container>

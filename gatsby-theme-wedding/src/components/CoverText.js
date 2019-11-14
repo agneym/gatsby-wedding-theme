@@ -42,7 +42,7 @@ const ImpText = styled(Text)`
 
 const QUERY = graphql`
   query {
-    event {
+    eventJson {
       profiles {
         name
       }
@@ -54,12 +54,14 @@ const QUERY = graphql`
           }
         }
       }
+      rawJson
+      fileRelativePath
     }
   }
 `;
 
 function CoverText() {
-  const { event } = useStaticQuery(QUERY);
+  const { eventJson: event } = useStaticQuery(QUERY);
   return (
     <Fragment>
       <Heading>
