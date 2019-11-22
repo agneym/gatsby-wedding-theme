@@ -36,7 +36,7 @@ module.exports = {
 
 ## Adding the Data
 
-[Data Format](https://github.com/BoyWithSilverWings/gatsby-wedding-theme/blob/master/gatsby-theme-wedding/data/event.json) - You can provide data in JSON format.
+[Data Format](https://github.com/agneym/gatsby-wedding-theme/blob/master/gatsby-theme-wedding/data/event.json) - You can provide data in JSON format.
 
 ## Changing the theme
 
@@ -48,7 +48,7 @@ const theme = {};
 export default theme;
 ```
 
-[See full properties here](https://github.com/BoyWithSilverWings/gatsby-wedding-theme/blob/master/gatsby-theme-wedding/src/components/theme.js)
+[See full properties here](https://github.com/agneym/gatsby-wedding-theme/blob/master/gatsby-theme-wedding/src/components/theme.js)
 
 If you need to keep existing theme and edit some of the values:
 
