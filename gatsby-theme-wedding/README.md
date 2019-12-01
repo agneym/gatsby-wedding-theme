@@ -14,10 +14,10 @@ A simple and easy wedding theme using Gatsby and Styled Components.
 In your `gatsby-config.js`:
 
 ```bash
-npm i --save-dev @agney/gatsby-theme-wedding
+npm i @agney/gatsby-theme-wedding
 
 # OR #
-yarn add --dev @agney/gatsby-theme-wedding
+yarn add @agney/gatsby-theme-wedding
 ```
 
 ```js
