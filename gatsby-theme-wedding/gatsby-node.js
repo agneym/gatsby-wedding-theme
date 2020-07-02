@@ -17,7 +17,6 @@ exports.createPages = async ({ actions }, options) => {
 };
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  console.log("on create webpack config gets called!!!!!!!!!!!!!!!!!");
   if (stage === "build-html") {
     actions.setWebpackConfig({
       module: {
