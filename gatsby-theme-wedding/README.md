@@ -11,14 +11,14 @@ A simple and easy wedding theme using Gatsby and Styled Components.
 
 ## Manual Setup
 
-In your `gatsby-config.js`:
-
 ```bash
 npm i @agney/gatsby-theme-wedding
 
 # OR #
 yarn add @agney/gatsby-theme-wedding
 ```
+
+In your `gatsby-config.js`:
 
 ```js
 module.exports = {
