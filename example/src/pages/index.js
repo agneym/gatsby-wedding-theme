@@ -1,3 +1,4 @@
 import React from "react"
 
-export default () => <div>Homepage in a user's site</div>
+const Index = () => <div>Homepage in a user's site</div>
+export default Index

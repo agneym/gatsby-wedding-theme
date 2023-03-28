@@ -10,26 +10,26 @@
     "develop": "gatsby develop"
   },
   "peerDependencies": {
-    "gatsby": "^2.17.10",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "gatsby": "^5.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "gatsby": "^2.17.10",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "gatsby": "^5.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.7",
-    "gatsby-source-filesystem": "^2.1.35",
-    "gatsby-transformer-json": "^2.2.16",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "gatsby-source-filesystem": "^5.8.0",
+    "gatsby-transformer-json": "^5.8.0",
     "react-countdown-now": "^2.1.2",
-    "react-helmet": "^5.2.1",
-    "sal.js": "^0.6.3",
-    "styled-components": "^4.4.1"
+    "react-helmet": "^6.1.0",
+    "sal.js": "^0.8.5",
+    "styled-components": "^5.3.9"
   },
   "repository": {
     "type": "git",

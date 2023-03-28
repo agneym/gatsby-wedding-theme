@@ -17,12 +17,15 @@
     "example"
   ],
   "devDependencies": {
-    "husky": "^3.0.9",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1"
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7",
+    "pretty-quick": "^3.1.3"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/agneym/gatsby-wedding-theme"
+  },
+  "resolutions": {
+    "babel-plugin-lodash/@babel/types": "~7.20.0"
   }
 }
