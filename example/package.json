@@ -10,9 +10,9 @@
     "build": "gatsby build"
   },
   "dependencies": {
-    "gatsby": "^2.17.6",
+    "gatsby": "^5.8.0",
     "@agney/gatsby-theme-wedding": "^1.0.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
