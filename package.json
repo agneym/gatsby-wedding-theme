@@ -24,8 +24,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/agneym/gatsby-wedding-theme"
-  },
-  "resolutions": {
-    "babel-plugin-lodash/@babel/types": "~7.20.0"
   }
 }
